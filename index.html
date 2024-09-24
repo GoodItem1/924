@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Card with Overlay</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="1.1">
+    <meta property="og:description" content="Click to view product on Shopee">
+    <meta property="og:image" content="https://raw.githubusercontent.com/GoodItem1/imageorocan/refs/heads/main/460882249_8453637861370153_7418995032695468626_n.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://shopee.ph/product/54559072/24502866511?uls_trackid=50qlns2d00l9">
+    <meta property="og:type" content="website">
+
+    <!-- CSS for the transparent overlay -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .link-card {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .link-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(1.1); /* Adjust image brightness */
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="link-card" onclick="window.location.href='https://shopee.ph/product/54559072/24502866511?uls_trackid=50qlns2d00l9'">
+        <img src="https://raw.githubusercontent.com/GoodItem1/imageorocan/refs/heads/main/460882249_8453637861370153_7418995032695468626_n.jpg" alt="Shopee Product Image">
+        <div class="overlay">1.1</div>
+    </div>
+
+</body>
+</html>
