@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Redirect to Shopee</title>
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="1.1">
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Shopee Product">
     <meta property="og:image" content="https://raw.githubusercontent.com/GoodItem1/imageorocan/refs/heads/main/460882249_8453637861370153_7418995032695468626_n.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://shopee.ph/product/54559072/24502866511?uls_trackid=50qlns2d00l9">
     <meta property="og:type" content="website">
 
-    <!-- CSS for the transparent overlay -->
+    <!-- CSS for the card and overlay -->
     <style>
         * {
             box-sizing: border-box;
@@ -22,6 +23,11 @@
         }
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
         .link-card {
             position: relative;
@@ -29,43 +35,44 @@
             height: 300px;
             overflow: hidden;
             cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .link-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: brightness(1.1); /* Adjust image brightness */
+            border-radius: 8px;
         }
         .overlay {
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
-            padding: 5px 10px;
-            font-size: 14px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
 <body>
 
-    <div class="link-card">
-        <img src="https://raw.githubusercontent.com/GoodItem1/imageorocan/refs/heads/main/460882249_8453637861370153_7418995032695468626_n.jpg" alt="Shopee Product Image">
-        <div class="overlay">1.1</div>
-    </div>
+    <!-- Shopee clickable link card -->
+    <a href="https://shopee.ph/product/54559072/24502866511?uls_trackid=50qlns2d00l9" target="_blank">
+        <div class="link-card">
+            <img src="https://raw.githubusercontent.com/GoodItem1/imageorocan/refs/heads/main/460882249_8453637861370153_7418995032695468626_n.jpg" alt="Shopee Product Image">
+            <div class="overlay">Shop Now</div>
+        </div>
+    </a>
 
-    <p style="text-align: center; margin-top: 10px;">
-        <a href="https://shopee.ph/product/54559072/24502866511?uls_trackid=50qlns2d00l9" target="_blank">View Product on Shopee</a>
-    </p>
-
-</body>
-</html>
-
-<html>
-<head>
-  <title>1.1</title>
-</head>
-<body>
-  <iframe src="https://gooditem1.github.io" width="100%" height="100%" frameborder="0"></iframe>
 </body>
 </html>
